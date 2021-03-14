@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form styling</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background: #344a72;
+            color:#fff;
+            line-height: 1.1;
+        }
+        a{
+                text-decoration: none;
+            } 
+            #container {
+                margin:30px auto;
+                max-width: 400px;
+                padding: 20px;
+            } 
+            .form-wrap{
+                background: #fff;
+                padding: 15px 20px;
+                color:#333
+            }
+            .form-wrap h1, 
+            .form-wrap p {
+                text-align: center;
+            }
+            .form-wrap .form-group{
+                margin-top: 10px;
+            }
+            .form-wrap .form-group label {
+                display: block;
+                color: #666;
+            }
+            .form-wrap .form-group input {
+                width: 100%;
+                padding: 10px;
+                border:#ddd 1px solid;
+                border-radius: 5px;
+            }
+            .form-wrap button {
+                display: block;
+                width: 100%;
+                padding: 10px;
+                margin-top: 20px;
+                background: #49c1a2;
+                color: #fff;
+                cursor: pointer;
+
+            }
+            .form-wrap button :hover{
+                background: #37a0be;
+
+            }
+            .form-wrap .button-text {
+                font-size: 13px;
+                margin-top: 30px;
+            }
+            footer {
+                text-align: center;
+                margin-top: 30px;
+            }
+footer a {
+    columns: #49c1a2;
+}
+    </style>
+
+</head>
+<body>
+    <div id="container">
+        <div class="form-wrap">
+        <h1>Sign up</h1><br>
+            <p>it's easy and only takes minute</p>
+        <form>
+    <div class="form-group">
+        <label for="first-name">first name</label> 
+            <input type="text" id="first-name" name="firstname">
+        </div>
+        <div class="form-group">
+        <label for="last-name">last name</label>
+            <input type="text" id="last-name" name="lastname">
+        </div>
+        <div class="form-group">
+           <label for="email">email</label>
+    <input type="email" name="email" id="email">
+    </div>
+    <div class="form-group">
+        <label for="password">password</label>
+        <input type="password" id="password2" name="password2">
+        </div>
+        <div class="form-group">
+    <label for="password2">confirm password</label>
+    <input type="password" name="password">
+    </div>
+        <button type="submit" class="btn">Sign up</button>
+        <p class="bottom-text">
+            By clicking sign up button you agree to our
+        <a href="#">Terms & conditios </a> and
+        <a href="#">Privecy Policy </a>
+        </p>
+        </form>
+        </div>
+<footer>
+        <p> already have an account? <a href="#">login here</a></p>
+    </footer>
+    </div>
+</div>
+    
